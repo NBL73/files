@@ -8,7 +8,7 @@ namespace Server.Mobiles
 	[CorpseName( "zwloki Athrad Math" )]
 	public class ZmiennyDar : BaseCreature
 	{
-		public override double DifficultyScalar{ get{ return 1.15; } }
+		
 		[Constructable]
 		public ZmiennyDar () : base( AIType.AI_BattleMage, FightMode.Weakest, 12, 1, 0.2, 0.4 )
 		{
@@ -67,10 +67,10 @@ namespace Server.Mobiles
 		
 		public override void AddWeaponAbilities()
         {
-            WeaponAbilities.Add( WeaponAbility.BleedAttack, 0.30 );
-            WeaponAbilities.Add( WeaponAbility.ForceOfNature, 0.20 );
-            WeaponAbilities.Add( WeaponAbility.TalonStrike, 0.15 );
-            WeaponAbilities.Add( WeaponAbility.Feint, 0.15 );
+            WeaponAbilities.Add( WeaponAbility.BleedAttack, 0.25 );
+            WeaponAbilities.Add( WeaponAbility.ForceOfNature, 0.05 );
+            WeaponAbilities.Add( WeaponAbility.TalonStrike, 0.10 );
+            WeaponAbilities.Add( WeaponAbility.Feint, 0.05 );
         }
         private class HueChangeTimer : Timer
 		{
